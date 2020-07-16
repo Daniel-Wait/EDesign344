@@ -1,0 +1,7 @@
+CommandType = 2
+	    CommandPort = 2
+	
+	    self.connection.write(repr(CommandType).encode('utf-8'))
+	    self.connection.write(repr(CommandPort).encode('utf-8'))
+	    self.connection.write(b"\n")
+	    self.printSerialReturn()
